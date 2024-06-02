@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 1 JS</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function suma(){
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            let resultado = num1 + num2;
+            document.getElementById("suma").innerHTML = "La suma es: " + resultado;
+        }
+    </script>
+
+       <script>
+        function resta(){
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            let resultado = num1 - num2;
+            document.getElementById("resta").innerHTML = "La resta es: " + resultado;
+        }
+    </script>
+
+     <script>
+        function multiplicacion(){
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            let resultado = num1 * num2;
+            document.getElementById("multiplicacion").innerHTML = "La multiplicación es: " + resultado;
+        }
+    </script>
+
+<script>
+    function division(){
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+
+        let resultado = num1 / num2;
+        document.getElementById("division").innerHTML = "La división es: " + resultado;
+    }
+</script>
+</head>
+
+<body>
+    <section class="section">
+        <h1 class="title">Práctica inicial: Opercaciones básicas con funciones</h1>
+
+        <p>Ingrese el primer número: <input type="number" id="num1"></p>
+        <p>Ingre el segundo número: <input type="number" id="num2"></p>
+    
+        <p class="resultado" id="suma"></p>
+        <p class="resultado" id="resta"></p>
+        <p class="resultado" id="multiplicacion"></p>
+        <p class="resultado" id="division"></p>
+
+        <div class="botones">
+            <input type="button" value="Sumar" onclick="suma()">
+            <input type="button" value="Restar" onclick="resta()">
+            <input type="button" value="Multiplicar" onclick="multiplicacion()">
+            <input type="button" value="Dividir" onclick="division()">
+            </div>
+    </section>
+  
+</body>
+</html>
